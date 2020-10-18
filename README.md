@@ -1,4 +1,4 @@
-An open repository of things I'm working on and have worked on.
+An open repository of codes that I'm working on and have worked on.
 
 Anyone can use what they see here and contribute to it as they see fit, as long as they aren't messeing around for fun.
 
