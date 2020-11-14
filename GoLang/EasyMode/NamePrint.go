@@ -1,22 +1,27 @@
 package main
 
 import "fmt"
+import "bufio"
+import "os"
+import "strings"
 
 func namePrint(){
-	var firstName string
-	var lastName string
+	reader := bufio.NewReader(os.Stdin)
+	var name string
 	fmt.Println("Enter your name please.")
-	fmt.Scanf("%s%s", &firstName, &lastName)
-	fmt.Printf("The name entered was %s %s.\n", firstName, lastName)
+	name, _ = reader.ReadString('\n')
+	name = strings.Replace(name, "\n", "", -1)
+	fmt.Printf("The name entered was %s.\n", name)
 }
 
 func specificNamePrint(){
-	var firstName string
+	reader := bufio.NewReader(os.Stdin)
+	var name string
 	var testName string = "Alice"
-	fmt.Println("Please enter your firstname.")
-	fmt.Scanf("%s", &firstName)
-	if(firstName==testName){
-		fmt.Printf("How's it going, %s?\n", firstName)
+	fmt.Println("Enter your name please.")
+	name, _ = reader.ReadString('\n')
+	if(name==testName){
+		fmt.Printf("How's it going, %s?\n", name)
 	}else{
 		fmt.Println("Hello.")
 	}
