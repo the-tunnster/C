@@ -1,4 +1,4 @@
-package easymode
+package main
 
 import "fmt"
 

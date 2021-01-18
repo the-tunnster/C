@@ -1,4 +1,4 @@
-package listsandstrings
+package main
 
 import "fmt"
 

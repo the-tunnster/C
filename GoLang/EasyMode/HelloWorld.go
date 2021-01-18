@@ -1,5 +1,4 @@
-package easymode
-
+package main
 import "fmt"
 
 func helloWrold(){
