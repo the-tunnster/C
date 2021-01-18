@@ -1,4 +1,4 @@
-package main
+package easymode
 
 func main(){
 	//This is just here until I find a better way to get the error to go away.

@@ -1,4 +1,4 @@
-package main
+package easymode
 
 import "fmt"
 import "math"
