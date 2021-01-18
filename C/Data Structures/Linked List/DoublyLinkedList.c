@@ -6,13 +6,8 @@ struct node{
     int info;
     struct node *next;
 };
-struct node * CreateANewNode(int value){
-    struct node *ptr = (struct node *)malloc(sizeof(struct node));
-    ptr->pre=NULL;
-    ptr->info=value;
-    ptr->next=NULL;
-    return (ptr);
-}
+
+struct node* CreateNewNode(int);
 
 struct node* InsertANode(struct node *);
 struct node* InsertAtTheBeginning(struct node *, struct node *);
@@ -39,6 +34,14 @@ int main(){
         }
     }while(n==1||n==2);
     return 0;
+}
+
+struct node * CreateANewNode(int value){
+    struct node *ptr = (struct node *)malloc(sizeof(struct node));
+    ptr->pre=NULL;
+    ptr->info=value;
+    ptr->next=NULL;
+    return (ptr);
 }
 
 struct node* InsertANode(struct node *head){
@@ -103,7 +106,6 @@ struct node* InsertAtTheEnd(struct node *head, struct node *ptr){
     ptr->pre=temp;
     return(temp);
 }
-
 
 struct node* DeleteANode(struct node *head){
     if (head == NULL) {

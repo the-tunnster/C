@@ -6,17 +6,17 @@ struct node{
     struct node * next;
 };
 
-
 struct node* CreateNewNode(int);
-struct node* DeleteANode(struct node *);
-struct node* InsertAtBeginning(struct node *, struct node *);
-struct node* InsertAtTheEnd(struct node *, struct node *);
-struct node* InsertInTheMiddle(struct node *, struct node *, int);
-struct node* DeleteInTheBeginning(struct node *);
-struct node* DeleteInTheEnd(struct node *);
-struct node* DeleteInTheMiddle(struct node *, int);
+
 struct node* InsertANode(struct node *);
+struct node* InsertAtBeginning(struct node *, struct node *);
+struct node* InsertInTheMiddle(struct node *, struct node *, int);
+struct node* InsertAtTheEnd(struct node *, struct node *);
+
 struct node* DeleteANode(struct node *);
+struct node* DeleteInTheBeginning(struct node *);
+struct node* DeleteInTheMiddle(struct node *, int);
+struct node* DeleteInTheEnd(struct node *);
 
 int main(){
     struct node * head = NULL;

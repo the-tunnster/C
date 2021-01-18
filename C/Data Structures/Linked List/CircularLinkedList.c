@@ -5,16 +5,18 @@ struct node{
     int info;
     struct node *next;
 };
-struct node * CreateNewNode(int value);
-struct node* DeleteANode(struct node *);
-struct node* InsertAtBeginning(struct node *, struct node *);
-struct node* InsertAtTheEnd(struct node *, struct node *);
-struct node* InsertInTheMiddle(struct node *, struct node *, int);
-struct node* DeleteInTheBeginning(struct node *);
-struct node* DeleteInTheEnd(struct node *);
-struct node* DeleteInTheMiddle(struct node *, int n);
+
+struct node* CreateNewNode(int);
+
 struct node* InsertANode(struct node *);
+struct node* InsertAtBeginning(struct node *, struct node *);
+struct node* InsertInTheMiddle(struct node *, struct node *, int);
+struct node* InsertAtTheEnd(struct node *, struct node *);
+
 struct node* DeleteANode(struct node *);
+struct node* DeleteInTheBeginning(struct node *);
+struct node* DeleteInTheMiddle(struct node *, int);
+struct node* DeleteInTheEnd(struct node *);
 
 void main(){
     struct node * head = NULL;
@@ -32,7 +34,7 @@ void main(){
     }while(n==1||n==2);
 }
 
-struct node * CreateNewNode(int value){
+struct node* CreateNewNode(int value){
     struct node *ptr = (struct node *)malloc(sizeof(struct node));
     ptr->info=value;
     ptr->next=NULL;
