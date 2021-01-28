@@ -81,7 +81,6 @@ void sort() {
       }
 }
 
-// Printing the result
 void print() {
   int i, cost = 0;
 
