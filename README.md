@@ -1,7 +1,3 @@
-An open repository of codes that I'm working on and have worked on.
-
-Anyone can use what they see here and contribute to it as they see fit, as long as they aren't messeing around for fun.
-
-That's all I got to say, and if you notice something wrong or worth changing, let me know.
-
-GG WP bois.
+A bunch of easy to use codes in C, implemented and organized by category of use.
+Do take what you need, and if you have any doubts, message me or something.
+If you feel like adding something or making any edits, go ahead.
